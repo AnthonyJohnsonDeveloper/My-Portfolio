@@ -1,14 +1,23 @@
 import React from "react";
 
+import htmlIcon from "../assets/img/html.jpg";
+import cssIcon from "../assets/img/css-131-722685.webp";
+import jsIcon from "../assets/img/javascript-1-225993.webp";
+import reactIcon from "../assets/img/react-3-1175109.webp";
+import jqueryIcon from "../assets/img/free-postgresql-11-1175122.webp";
+import nodeIcon from "../assets/img/node-js.svg";
+import bootstrapIcon from "../assets/img/Bootstrap_logo.svg.png";
+import postgresIcon from "../assets/img/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo-5ae94a5d5e5172.2488375515252383653863.jpg";
+
 const techs = [
-  { name: "HTML", img: "/assets/img/html.jpg" },
-  { name: "CSS", img: "/assets/img/css-131-722685.webp" },
-  { name: "JavaScript", img: "/assets/img/javascript-1-225993.webp" },
-  { name: "React", img: "/assets/img/react-3-1175109.webp" },
-  { name: "jQuery", img: "/assets/img/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo.jpg" },
-  { name: "Node.js", img: "/assets/img/node-js.svg" },
-  { name: "Bootstrap", img: "/assets/img/Bootstrap_logo.svg.png" },
-  { name: "PostgreSQL", img: "/assets/img/free-postgresql-11-1175122.webp" }
+  { name: "HTML", img: htmlIcon },
+  { name: "CSS", img: cssIcon },
+  { name: "JavaScript", img: jsIcon },
+  { name: "React", img: reactIcon },
+  { name: "jQuery", img: jqueryIcon },
+  { name: "Node.js", img: nodeIcon },
+  { name: "Bootstrap", img: bootstrapIcon },
+  { name: "PostgreSQL", img: postgresIcon }
 ];
 
 function TechStack() {
@@ -16,7 +25,9 @@ function TechStack() {
     <section id="languages">
       <div className="container">
         <div className="row">
-          <h1 className="section__title">This is my <span className="text--red">Technology stack</span></h1>
+          <h1 className="section__title">
+            This is my <span className="text--red">Technology stack</span>
+          </h1>
           <div className="language__list">
             {techs.map((tech, index) => (
               <div className="language" key={index}>

@@ -1,4 +1,6 @@
 import React from "react";
+import profileImg from "../assets/img/profile.png";
+import heroImg from "../assets/img/undraw_Web_developer_re_h7ie.png";
 
 function Hero() {
   return (
@@ -7,7 +9,7 @@ function Hero() {
         <div className="about-me__info row">
           <div className="about-me__info--container">
             <figure className="about-me__picture--mask">
-              <img src="/assets/img/profile.png" className="about-me__picture" alt="picture of me!" />
+              <img src={profileImg} className="about-me__picture" alt="picture of me!" />
             </figure>
             <h1 className="about-me__info--title">
               Hey! I'm <span className="text--red">Anthony Johnson</span> <span className="rocket">🚀</span>
@@ -22,13 +24,11 @@ function Hero() {
               <a href="https://www.linkedin.com/in/anthony-johnson-81ba01257/" target="_blank" rel="noreferrer" className="about-me__link">
                 LinkedIn
               </a>
-              <a href="https://anthonyjohnsondeveloper.github.io/Resume/" target="_blank" rel="noreferrer" className="about-me__link">
-                Resume
-              </a>
+              <a href="/resume.pdf" download className="about-me__link">Resume</a>
             </div>
           </div>
           <figure className="about-me__img--container">
-            <img src="/assets/img/undraw_Web_developer_re_h7ie.png" className="about-me__img" alt="developer" />
+            <img src={heroImg} className="about-me__img" alt="developer" />
           </figure>
         </div>
       </div>

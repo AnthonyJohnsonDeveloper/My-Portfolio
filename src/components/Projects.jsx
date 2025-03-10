@@ -1,10 +1,15 @@
 import React from "react";
 
+// Image imports
+import tuneWizardImg from "../assets/img/Capture.PNG";
+import portfolioImg from "../assets/img/Website.PNG";
+import exampleImg from "../assets/img/loopit.png";
+
 const projects = [
   {
     title: "TuneWizard",
     stack: "Html, Css, JavaScript",
-    img: "/assets/img/Capture.PNG",
+    img: tuneWizardImg,
     description:
       "The application is a car tuning tool designed for both racing and drifting enthusiasts. Users can input specs like weight, HP, tire sizes, and it identifies appropriate car packs. Built with clean JS logic and form handling.",
     github: "https://github.com/AnthonyJohnsonDeveloper",
@@ -13,7 +18,7 @@ const projects = [
   {
     title: "Portfolio Project",
     stack: "Html, Css",
-    img: "/assets/img/Website.PNG",
+    img: portfolioImg,
     description:
       "This is my portfolio site built from scratch using HTML and CSS with smooth animations on load.",
     github: "https://github.com/AnthonyJohnsonDeveloper",
@@ -22,7 +27,7 @@ const projects = [
   {
     title: "Example Project",
     stack: "Html, Css, JavaScript",
-    img: "/assets/img/loopit.png",
+    img: exampleImg,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum explicabo tempore veritatis! Odio adipisci cumque.",
     github: "https://github.com/AnthonyJohnsonDeveloper",

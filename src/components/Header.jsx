@@ -1,14 +1,25 @@
 import React from "react";
-import "../styles/Header.css"; // We'll style it here
 
 function Header() {
   return (
-    <nav className="navbar">
-      <div className="logo">Anthony Johnson</div>
-      <ul className="nav-links">
-        <li><a href="#languages">Languages</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="mailto:anthonyjohnson5016@gmail.com" className="contact-button">Contact</a></li>
+    <nav>
+      <div className="personal__logo">Anthony Johnson</div>
+      <ul className="nav__link--list">
+        <li className="nav__link">
+          <a href="#languages" className="nav__link--anchor link__hover-effect link__hover-effect--black">
+            Languages
+          </a>
+        </li>
+        <li className="nav__link">
+          <a href="#projects" className="nav__link--anchor link__hover-effect link__hover-effect--black">
+            Projects
+          </a>
+        </li>
+        <li className="nav__link">
+          <a href="mailto:anthonyjohnson5016@gmail.com" className="nav__link--anchor nav__link--anchor-primary">
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   );

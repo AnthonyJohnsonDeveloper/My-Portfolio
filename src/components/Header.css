@@ -1,0 +1,55 @@
+/* styles/Header.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00aaff;
+    text-shadow: 0 0 8px rgba(0, 170, 255, 0.7);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a:focus {
+    color: #00ccff;
+    border-bottom: 2px solid #00ccff;
+  }
+  
+  .contact-button {
+    background: #ff0055;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white !important;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background: #ff3388;
+    transform: scale(1.05);
+  }

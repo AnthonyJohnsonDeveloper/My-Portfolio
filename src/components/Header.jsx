@@ -25,7 +25,7 @@ function Header() {
           </Link>
         </li>
         <li className="nav__link">
-          <a href="mailto:anthonyjohnson5016@gmail.com" className="nav__link--anchor nav__link--anchor-primary">
+        <a href="mailto:anthonyjohnson5016@gmail.com" className="nav__link--anchor link__hover-effect link__hover-effect--black">
             Contact
           </a>
         </li>

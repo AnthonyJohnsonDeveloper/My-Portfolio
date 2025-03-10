@@ -327,3 +327,74 @@ footer {
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav__link--list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .row {
+    padding: 0 1rem;
+  }
+
+  .language__list {
+    grid-template-columns: repeat(2, 1fr); /* stack tech icons better */
+  }
+
+  .project__description {
+    padding: 0.5rem;
+  }
+
+  .project__description--para {
+    font-size: 0.8rem;
+  }
+
+  .about-me__info--title {
+    font-size: 1.8rem;
+  }
+
+  .about-me__link {
+    margin: 0.5rem 0;
+  }
+
+  footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer__social--list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .language__list {
+    grid-template-columns: 1fr;
+  }
+
+  .project__wrapper {
+    max-width: 100%;
+  }
+
+  .project__description--title {
+    font-size: 1.2rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
